@@ -72,6 +72,14 @@ const Index = () => {
         </div>
       </nav>
 
+      <img
+        loading="lazy"
+        srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
+        className="w-full mt-5 object-cover object-center min-h-5 min-w-5 overflow-hidden"
+        style={{ aspectRatio: "1.42" }}
+        alt=""
+      />
+
       {/* Hero Section */}
       <section className="pt-20 pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
@@ -140,7 +148,7 @@ const Index = () => {
                   AI-Психолог 24/7
                 </CardTitle>
                 <CardDescription className="text-gray-600">
-                  Перс��нальный AI-помощник для ментального здоровья в Telegram
+                  Персональный AI-помощник для ментального здоровья в Telegram
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -323,7 +331,7 @@ const Index = () => {
                   <div className="text-4xl font-bold text-gray-900">
                     25-35 AZN
                   </div>
-                  <div className="text-gray-600">за се��сию (50 мин)</div>
+                  <div className="text-gray-600">за сессию (50 мин)</div>
                   <div className="text-serenity-600 font-medium">
                     Пакет 3 сессии - 70 AZN
                   </div>
@@ -649,7 +657,7 @@ const Index = () => {
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
             Присоединяйся к тысячам людей, которые уже изменили свою жизнь с
-            помощью на��ей платформы
+            помощью нашей платформы
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
