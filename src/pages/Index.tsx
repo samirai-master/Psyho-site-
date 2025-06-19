@@ -75,11 +75,9 @@ const Index = () => {
       </nav>
 
       <img
-        loading="lazy"
         srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
         className="w-full mt-5 object-cover object-center min-h-5 min-w-5 overflow-hidden"
         style={{ aspectRatio: "1.42" }}
-        alt=""
       />
 
       {/* Hero Section */}
@@ -105,9 +103,10 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-mindful-gradient text-white px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all"
+                action=""
               >
                 <Bot className="w-5 h-5 mr-2" />
-                Попробовать бесплатно 7 дней
+                <span _newProperty="">Попробовать бесплатно 7 дней</span>
               </Button>
               <Button
                 variant="outline"
@@ -243,7 +242,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Б��знес наставник
+                    Бизнес наставник
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
