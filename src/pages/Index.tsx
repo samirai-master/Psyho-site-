@@ -186,7 +186,7 @@ const Index = () => {
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <CardTitle className="text-xl font-bold text-gray-900">
-                  Онлайн-консул��тации
+                  Онлайн-консультации
                 </CardTitle>
                 <CardDescription className="text-gray-600">
                   Индивидуальные сессии с настоящим психологом
@@ -213,6 +213,49 @@ const Index = () => {
                   </div>
                   <div className="text-serenity-600 font-medium">
                     За сессию или пакеты
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* AI-Наставник для богатства и успеха */}
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm overflow-hidden">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <DollarSign className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl font-bold text-gray-900">
+                  AI-Наставник чтобы стать богатым и успешным
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Персональный AI-помощник для достижения финансового успеха
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
+                    Полезные привычки
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
+                    Финансовый руководитель
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
+                    Б��знес наставник
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
+                    Фитнес тренер
+                  </li>
+                </ul>
+                <div className="mt-6 pt-6 border-t border-gray-100">
+                  <div className="text-2xl font-bold text-gray-900">
+                    15 AZN/мес
+                  </div>
+                  <div className="text-serenity-600 font-medium">
+                    7 дней бесплатно
                   </div>
                 </div>
               </CardContent>
@@ -679,7 +722,7 @@ const Index = () => {
             </Button>
           </div>
           <p className="text-white/80 mt-6">
-            <CheckCircle className="w-4 h-4 inline mr-2" />7 дней б��сплатно •
+            <CheckCircle className="w-4 h-4 inline mr-2" />7 дней бесплатно •
             Отмена в любое время
           </p>
         </div>
