@@ -24,6 +24,8 @@ import {
   TrendingUp,
   Clock,
   MessageCircle,
+  DollarSign,
+  Target,
 } from "lucide-react";
 
 const Index = () => {
@@ -184,7 +186,7 @@ const Index = () => {
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <CardTitle className="text-xl font-bold text-gray-900">
-                  Онлайн-консультации
+                  Онлайн-консул��тации
                 </CardTitle>
                 <CardDescription className="text-gray-600">
                   Индивидуальные сессии с настоящим психологом
@@ -677,7 +679,7 @@ const Index = () => {
             </Button>
           </div>
           <p className="text-white/80 mt-6">
-            <CheckCircle className="w-4 h-4 inline mr-2" />7 дней бесплатно •
+            <CheckCircle className="w-4 h-4 inline mr-2" />7 дней б��сплатно •
             Отмена в любое время
           </p>
         </div>
