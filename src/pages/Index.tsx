@@ -218,32 +218,53 @@ const Index = () => {
                   AI-Психолог 24/7
                 </CardTitle>
                 <CardDescription className="text-gray-600">
-                  Персональный AI-помощник для ментального здоровья в Telegram
+                  Твой личный терапевт, который всегда рядом
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Представь, что у тебя есть личный психолог, который доступен в
+                  любое время дня и ночи. Больше никаких мучительных ожиданий
+                  приема, никого страха осуждения. Просто открываешь Telegram и
+                  получаешь профессиональную поддержку мгновенно.
+                </p>
                 <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Мягкая анонимность
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Полная анонимность</strong> - никто не узнает о
+                      твоих проблемах
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Практики и аудио
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Персональные практики</strong> - специально для
+                      твоих потребностей
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Дневник и трекер тревоги
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Умный дневник эмоций</strong> - отслеживай свой
+                      прогресс
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Трекер тревожности</strong> - предупреждай
+                      панические атаки
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Медитации и аудио</strong> - расслабление в любой
+                      момент
+                    </span>
                   </li>
                 </ul>
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="text-2xl font-bold text-gray-900">
-                    10 AZN/мес
-                  </div>
-                  <div className="text-serenity-600 font-medium">
-                    7 дней бесплатно
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
@@ -257,75 +278,113 @@ const Index = () => {
                   Онлайн-консультации
                 </CardTitle>
                 <CardDescription className="text-gray-600">
-                  Индивидуальные сессии с настоящим психологом
+                  Живое общение с Dr.Samir - профессиональным психологом
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Когда AI недостаточно, и нужна настоящая человеческая связь.
+                  Dr.Samir проведет тебя через самые сложные жизненные периоды.
+                  Это не просто разговор - это профессиональная терапия, которая
+                  меняет жизни.
+                </p>
                 <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Самооценка и тревога
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Работа с самооценкой</strong> - полюби себя
+                      настоящего
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Семейные отношения
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Избавление от тревоги</strong> - верни контроль
+                      над жизнью
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Работа с расставаниями
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Семейные отношения</strong> - наладь связь с
+                      близкими
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Преодоление расставаний</strong> - начни новую
+                      главу жизни
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Личностный рост</strong> - стань лучшей версией
+                      себя
+                    </span>
                   </li>
                 </ul>
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="text-2xl font-bold text-gray-900">
-                    25-35 AZN
-                  </div>
-                  <div className="text-serenity-600 font-medium">
-                    За сессию или пакеты
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
-            {/* AI-Наставник для богатства и успеха */}
+            {/* AI-Наставни�� для богатства и успеха */}
             <Card className="group hover:shadow-2xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm overflow-hidden">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <DollarSign className="w-6 h-6 text-white" />
                 </div>
                 <CardTitle className="text-xl font-bold text-gray-900">
-                  AI-Наставник чтобы стать богатым и успешным
+                  AI-Наставник для богатства и успеха
                 </CardTitle>
                 <CardDescription className="text-gray-600">
-                  Персональный AI-помощник для достижения финансового успеха
+                  Комплексный подход к успеху: разум, тело, финансы
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Успех требует не только п��авильной психологии, но и здорового
+                  тела, умных финансовых решений и железной дисциплины. Получи
+                  персонального наставника, который поможет тебе стать успешным
+                  во всех сферах жизни.
+                </p>
                 <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Полезные привычки
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Привычки миллионеров</strong> - внедри ежедневные
+                      ритуалы успеха
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Финансовый руководитель
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Финансовая грамотность</strong> - научись
+                      управлять деньгами как профи
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Бизнес наставник
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Бизнес-стратегии</strong> - создай несколько
+                      источников дохода
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Фитнес тренер
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Физическая форма</strong> - энергия и здоровье для
+                      достижения целей
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Ментальная устойчивость</strong> - психология
+                      успешного человека
+                    </span>
                   </li>
                 </ul>
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="text-2xl font-bold text-gray-900">
-                    15 AZN/мес
-                  </div>
-                  <div className="text-serenity-600 font-medium">
-                    7 дней бесплатно
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
@@ -339,30 +398,53 @@ const Index = () => {
                   Марафоны & Курсы
                 </CardTitle>
                 <CardDescription className="text-gray-600">
-                  Структурированные программы для быстрого результата
+                  Интенсивные программы трансформации за 7 дней
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Иногда нужна встряска, чтобы жизнь изменилась кардинально.
+                  Наши марафоны - это интенсивное погружение в решение
+                  конкретной проблемы. За 7 дней ты получишь инструменты,
+                  которые будешь использовать всю жизнь.
+                </p>
                 <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    7-дневный курс по тревоге
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>"Победи тревогу за 7 дней"</strong> - научись
+                      управлять своими страхами
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    AI + голосовые сообщения
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>AI + личные голосовые</strong> - технологии +
+                      человеческое участие
+                    </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    Практическая поддержка
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Ежедневная поддержка</strong> - ты не останешься
+                      один на один с проблемой
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Проверенные техники</strong> - работающие методы
+                      без "воды"
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-4 h-4 text-serenity-600 mr-3 mt-0.5" />
+                    <span>
+                      <strong>Групповая энергия</strong> - поддержка
+                      единомышленников
+                    </span>
                   </li>
                 </ul>
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="text-2xl font-bold text-gray-900">29 AZN</div>
-                  <div className="text-serenity-600 font-medium">
-                    Полный доступ
-                  </div>
-                </div>
               </CardContent>
             </Card>
           </div>
@@ -374,7 +456,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Прозрачное цено��бразование
+              Прозрачное ценообразование
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Выбери формат поддержки, который подходит именно тебе
@@ -635,7 +717,7 @@ const Index = () => {
                   <div className="flex justify-between items-center">
                     <span className="text-gray-700">Месячная подписка</span>
                     <span className="font-bold text-serenity-600">
-                      99 AZN/ме��
+                      99 AZN/мес
                     </span>
                   </div>
                 </div>
@@ -773,7 +855,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "Марафон по тревожности изме��ил мою жизнь. За 7 дней научился
+                  "Марафон по тревожности изменил мою жизнь. За 7 дней научился
                   техникам, которые использую до сих пор."
                 </p>
                 <div className="flex items-center">
@@ -801,7 +883,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "Живые консультации помогли мне пережить сложный п��риод.
+                  "Живые консультации помогли мне пережить сложный период.
                   Специалист очень профессиональный и понимающий."
                 </p>
                 <div className="flex items-center">
@@ -828,7 +910,7 @@ const Index = () => {
             Начни путь к лучшей версии себя уже сегодня
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Присоединяйся к тысячам людей, которые уже изменили свою жиз��ь с
+            Присоединяйся к тысячам людей, которые уже изменили свою жизнь с
             помощью нашей платформы
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -912,7 +994,7 @@ const Index = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Связаться с нами
+                    Связ��ться с нами
                   </a>
                 </li>
                 <li>
