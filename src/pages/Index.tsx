@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -603,8 +604,13 @@ const Index = () => {
                 <Button
                   variant="outline"
                   className="mt-6 w-full border-mindful-400 text-mindful-700"
+                  onClick={() =>
+                    window.open("https://t.me/drsamir_guides", "_blank")
+                  }
                 >
+                  <MessageSquare className="w-4 h-4 mr-2" />
                   Купить гайды
+                  <ExternalLink className="w-4 h-4 ml-2" />
                 </Button>
               </CardContent>
             </Card>
@@ -627,7 +633,7 @@ const Index = () => {
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Месячная п��дписка</span>
+                    <span className="text-gray-700">Месячная подписка</span>
                     <span className="font-bold text-serenity-600">
                       99 AZN/мес
                     </span>
@@ -636,8 +642,13 @@ const Index = () => {
                 <Button
                   variant="outline"
                   className="mt-6 w-full border-serenity-400 text-serenity-700"
+                  onClick={() =>
+                    window.open("https://t.me/drsamir_specialists", "_blank")
+                  }
                 >
+                  <Bot className="w-4 h-4 mr-2" />
                   Узнать больше
+                  <ExternalLink className="w-4 h-4 ml-2" />
                 </Button>
               </CardContent>
             </Card>
@@ -856,7 +867,7 @@ const Index = () => {
                 <span className="text-xl font-bold">MindfulAI</span>
               </div>
               <p className="text-gray-400">
-                Современн��я платформа для ментального здоровья, объединяющая
+                Современная платформа для ментального здоровья, объединяющая
                 AI-технологии и человеческую заботу.
               </p>
             </div>
@@ -952,6 +963,20 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      <ContactChoice
+        isOpen={showTrialModal}
+        onClose={() => setShowTrialModal(false)}
+        onChoice={(platform) => handleContactChoice(platform, "trial")}
+        title="Попробовать AI-психолога бесплатно"
+      />
+
+      <ContactChoice
+        isOpen={showConsultModal}
+        onClose={() => setShowConsultModal(false)}
+        onChoice={(platform) => handleContactChoice(platform, "consult")}
+        title="Записаться на консультацию"
+      />
     </div>
   );
 };
