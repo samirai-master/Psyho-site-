@@ -39,7 +39,9 @@ const Index = () => {
               <div className="w-8 h-8 bg-mindful-gradient rounded-lg flex items-center justify-center">
                 <Brain className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">MindfulAI</span>
+              <span className="text-xl font-bold text-gray-900">
+                AI Psixoloq Dəstəyi
+              </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a
@@ -58,16 +60,10 @@ const Index = () => {
                 href="#about"
                 className="text-gray-600 hover:text-mindful-600 transition-colors"
               >
-                О нас
+                Dr.Samir
               </a>
-              <Button
-                variant="outline"
-                className="border-mindful-200 text-mindful-700 hover:bg-mindful-50"
-              >
-                Войти
-              </Button>
               <Button className="bg-mindful-gradient text-white shadow-lg hover:shadow-xl transition-all">
-                Начать бесплатно
+                написать Dr.Samiru
               </Button>
             </div>
           </div>
@@ -275,7 +271,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    AI + голосовые сообщения
+                    AI + гол��совые сообщения
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
@@ -306,7 +302,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {/* AI Subscription */}
             <Card className="relative overflow-hidden border-2 border-mindful-200 hover:border-mindful-400 transition-all duration-300 bg-white">
               <div className="absolute top-0 right-0 bg-mindful-gradient text-white px-3 py-1 text-sm font-medium">
@@ -335,7 +331,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-serenity-600 mr-3" />
-                    Персонализир��ванные практики
+                    Персонализированные практики
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-serenity-600 mr-3" />
@@ -448,6 +444,55 @@ const Index = () => {
                   className="w-full border-lavender-400 text-lavender-700 hover:bg-lavender-50"
                 >
                   Присоединиться
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* AI Wealth Assistant */}
+            <Card className="border-2 border-gray-200 hover:border-yellow-400 transition-all duration-300 bg-white">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl font-bold text-gray-900">
+                  Ваш AI ассистент
+                </CardTitle>
+                <CardDescription>
+                  чтобы стать богатым и успешным
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="mb-6">
+                  <div className="text-4xl font-bold text-gray-900">20 AZN</div>
+                  <div className="text-gray-600">в месяц</div>
+                  <div className="text-yellow-600 font-medium">
+                    Премиум наставничество
+                  </div>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-serenity-600 mr-3" />
+                    Персональный финансовый план
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-serenity-600 mr-3" />
+                    Бизнес-стратегии и советы
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-serenity-600 mr-3" />
+                    Инвестиционное планирование
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-serenity-600 mr-3" />
+                    Мотивация и целеполагание
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-serenity-600 mr-3" />
+                    Анализ рынка и трендов
+                  </li>
+                </ul>
+                <Button
+                  variant="outline"
+                  className="w-full border-yellow-400 text-yellow-700 hover:bg-yellow-50"
+                >
+                  Стать успешным
                 </Button>
               </CardContent>
             </Card>
