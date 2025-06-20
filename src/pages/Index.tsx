@@ -374,7 +374,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Прозрачное ценообразование
+              Прозрачное цено��бразование
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Выбери формат поддержки, который подходит именно тебе
@@ -635,7 +635,7 @@ const Index = () => {
                   <div className="flex justify-between items-center">
                     <span className="text-gray-700">Месячная подписка</span>
                     <span className="font-bold text-serenity-600">
-                      99 AZN/мес
+                      99 AZN/ме��
                     </span>
                   </div>
                 </div>
@@ -773,7 +773,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "Марафон по тревожности изменил мою жизнь. За 7 дней научился
+                  "Марафон по тревожности изме��ил мою жизнь. За 7 дней научился
                   техникам, которые использую до сих пор."
                 </p>
                 <div className="flex items-center">
@@ -801,7 +801,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "Живые консультации помогли мне пережить сложный период.
+                  "Живые консультации помогли мне пережить сложный п��риод.
                   Специалист очень профессиональный и понимающий."
                 </p>
                 <div className="flex items-center">
@@ -828,24 +828,28 @@ const Index = () => {
             Начни путь к лучшей версии себя уже сегодня
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Присоединяйся к тысячам людей, которые уже изменили свою жизнь с
+            Присоединяйся к тысячам людей, которые уже изменили свою жиз��ь с
             помощью нашей платформы
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
               className="bg-white text-mindful-700 px-8 py-4 text-lg hover:bg-gray-50 shadow-xl"
+              onClick={() => setShowTrialModal(true)}
             >
               <Bot className="w-5 h-5 mr-2" />
               Попробовать AI-психолога
+              <ExternalLink className="w-4 h-4 ml-2" />
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="border-2 border-white text-white px-8 py-4 text-lg hover:bg-white/10"
+              onClick={() => setShowConsultModal(true)}
             >
               <Calendar className="w-5 h-5 mr-2" />
               Записаться на консультацию
+              <ExternalLink className="w-4 h-4 ml-2" />
             </Button>
           </div>
           <p className="text-white/80 mt-6">
