@@ -864,11 +864,11 @@ const Index = () => {
                 <div className="w-8 h-8 bg-mindful-gradient rounded-lg flex items-center justify-center">
                   <Brain className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">MindfulAI</span>
+                <span className="text-xl font-bold">AI Psixoloq Dəstəyi</span>
               </div>
               <p className="text-gray-400">
                 Современная платформа для ментального здоровья, объединяющая
-                AI-технологии и человеческую заботу.
+                AI-технологии и профессиональную поддержку Dr.Samir.
               </p>
             </div>
 
@@ -938,26 +938,32 @@ const Index = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400">
-              © 2024 MindfulAI. Все права защищены.
+              © 2024 AI Psixoloq Dəstəyi by Dr.Samir. Все права защищены.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                href="https://t.me/drsamir_bot"
+                className="text-gray-400 hover:text-white transition-colors flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <MessageSquare className="w-4 h-4 mr-1" />
                 Telegram
               </a>
               <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                href="https://wa.me/994501234567"
+                className="text-gray-400 hover:text-white transition-colors flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Instagram
+                <Phone className="w-4 h-4 mr-1" />
+                WhatsApp
               </a>
               <a
-                href="#"
+                href="/admin/login"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                WhatsApp
+                Админ
               </a>
             </div>
           </div>
