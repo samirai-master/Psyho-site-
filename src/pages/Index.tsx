@@ -26,9 +26,84 @@ import {
   MessageCircle,
   DollarSign,
   Target,
+  MessageSquare,
+  Phone,
+  ExternalLink,
 } from "lucide-react";
 
+// Contact choice modal component
+const ContactChoice = ({
+  onChoice,
+  isOpen,
+  onClose,
+  title,
+}: {
+  onChoice: (platform: "telegram" | "whatsapp") => void;
+  isOpen: boolean;
+  onClose: () => void;
+  title: string;
+}) => {
+  if (!isOpen) return null;
+
+  return (
+    <div
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white rounded-xl p-6 m-4 max-w-sm w-full"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <h3 className="text-lg font-bold mb-4">{title}</h3>
+        <p className="text-gray-600 mb-6">Выберите удобный способ связи:</p>
+        <div className="space-y-3">
+          <Button
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white flex items-center justify-center gap-2"
+            onClick={() => onChoice("telegram")}
+          >
+            <MessageSquare className="w-4 h-4" />
+            Telegram
+          </Button>
+          <Button
+            className="w-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center gap-2"
+            onClick={() => onChoice("whatsapp")}
+          >
+            <Phone className="w-4 h-4" />
+            WhatsApp
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Index = () => {
+  const [showTrialModal, setShowTrialModal] = React.useState(false);
+  const [showConsultModal, setShowConsultModal] = React.useState(false);
+
+  const handleContactChoice = (
+    platform: "telegram" | "whatsapp",
+    type: "trial" | "consult",
+  ) => {
+    const telegramUrl =
+      type === "trial"
+        ? "https://t.me/drsamir_bot"
+        : "https://t.me/drsamir_consult";
+    const whatsappUrl =
+      type === "trial"
+        ? "https://wa.me/994501234567?text=Хочу попробовать AI-психолога бесплатно"
+        : "https://wa.me/994501234567?text=Хочу записаться на консультацию";
+
+    if (platform === "telegram") {
+      window.open(telegramUrl, "_blank");
+    } else {
+      window.open(whatsappUrl, "_blank");
+    }
+
+    setShowTrialModal(false);
+    setShowConsultModal(false);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-mindful-50 via-serenity-50 to-lavender-50">
       {/* Navigation */}
@@ -93,18 +168,21 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-mindful-gradient text-white px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all"
-                action=""
+                onClick={() => setShowTrialModal(true)}
               >
                 <Bot className="w-5 h-5 mr-2" />
-                <span _newProperty="">Попробовать бесплатно 7 дней</span>
+                <span>Попробовать бесплатно 7 дней</span>
+                <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="px-8 py-4 text-lg border-2 border-mindful-200 text-mindful-700 hover:bg-mindful-50"
+                onClick={() => setShowConsultModal(true)}
               >
                 <Calendar className="w-5 h-5 mr-2" />
                 Записаться на консультацию
+                <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
             </div>
             <p className="text-gray-500 mt-4">
@@ -271,7 +349,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
-                    AI + гол��совые сообщения
+                    AI + голосовые сообщения
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-serenity-600 mr-3" />
@@ -549,7 +627,7 @@ const Index = () => {
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Месячная подписка</span>
+                    <span className="text-gray-700">Месячная п��дписка</span>
                     <span className="font-bold text-serenity-600">
                       99 AZN/мес
                     </span>
@@ -778,7 +856,7 @@ const Index = () => {
                 <span className="text-xl font-bold">MindfulAI</span>
               </div>
               <p className="text-gray-400">
-                Современная платформа для ментального здоровья, объединяющая
+                Современн��я платформа для ментального здоровья, объединяющая
                 AI-технологии и человеческую заботу.
               </p>
             </div>
